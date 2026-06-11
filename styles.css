@@ -31,6 +31,7 @@ header{
 #addbutt{
     padding: 10px;
     font-size: 15px;
+    cursor: pointer;
 }
 .task{
     padding: 20px;
@@ -42,7 +43,7 @@ header{
     align-items: center;
     transition: all 0.1s ease-in;
 }
-.task:hover {
+.task:hover{
   background-color: #a6a093; 
 }
 .checkbox{
@@ -55,4 +56,9 @@ header{
     border-radius: 4px;
     border: 1px solid #ccc;
     transition: all 0.2s ease;
+    cursor: pointer;
+}
+.remove{
+    margin-left: auto;
+    cursor: pointer;
 }
