@@ -35,18 +35,17 @@ container.addEventListener("change", (e) => {
 
     if (e.target.checked) {
       info.style.textDecoration = "line-through";
-      task.style.backgroundColor = "#949089";
+      task.style.backgroundColor = "var(--task-hover)";
       task.style.color = "white";
     } else {
       info.style.textDecoration = "none";
-      task.style.backgroundColor = "#d0c9b8";
-      task.style.color = "black";
+      task.style.backgroundColor = "";
     }
   }
 });
 container.addEventListener("click", (e) => {
-  if (e.target.closest(".remove")){
-    let bin = e.target.parentElement.parentElement
-    bin.remove()
+  if (e.target.closest(".remove")) {
+    let bin = e.target.parentElement.parentElement;
+    bin.remove();
   }
 });
