@@ -36,7 +36,7 @@ container.addEventListener("change", (e) => {
     if (e.target.checked) {
       info.style.textDecoration = "line-through";
       task.style.backgroundColor = "var(--task-hover)";
-      task.style.color = "white";
+      task.style.color = "white"; 
     } else {
       info.style.textDecoration = "none";
       task.style.backgroundColor = "";
